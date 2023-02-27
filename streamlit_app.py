@@ -17,7 +17,7 @@ streamlit.multiselect("Pick Some Fruits by Name:", list(my_fruit_list.index))
 
 fruit_selected = streamlit.multiselect("Pick Some Fruits by Name (Choosen some default):", list(my_fruit_list.index),['Avocado', 'Apple'])
 
-#fruit_to_show = my_fruit_list.Loc[fruit_selected]
+fruit_to_show = my_fruit_list.loc[fruit_selected]
 
 streamlit.header('🎂Show fruits which are selected')
-#streamlit.dataframe(fruit_to_show)
+streamlit.dataframe(fruit_to_show)
