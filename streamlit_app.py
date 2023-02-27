@@ -12,4 +12,4 @@ streamlit.multiselect("Pick Some Fruits by Index:", list(my_fruit_list.index))
 #my_fruit_list = my_fruit_list.set_index('Fruit')
 streamlit.multiselect("Pick Some Fruits by Name:", list(my_fruit_list.set_index('Fruit').index))
 
-#streamlit.multiselect("Pick Some Fruits by Name:", list(my_fruit_list.set_index('Fruit')),['Avocado', 'Apple'])
+#streamlit.multiselect("Pick Some Fruits by Name:", list(my_fruit_list.set_index('Fruit').index),['Avocado', 'Apple'])
